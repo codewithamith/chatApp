@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9292926e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #929292;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b4b4b4;
+}
+
+/* team-section */
+.zoom-effect {
+  padding: 10px;
+  border: 1px solid #198754;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  animation: blob 5s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0% {
+    border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius:  35% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+
